@@ -423,7 +423,7 @@
                 for (Post p:(ArrayList<Post>)request.getAttribute("MyPost")
                      ) {
         %>
-        <a href="${pageContext.request.contextPath}/ShowPostContext?pid=<%out.print(p.getPostid());%>">
+        <a href="${pageContext.request.contextPath}/ShowPostContent?pid=<%out.print(p.getPostid());%>">
             <div style="margin-left: 250px;margin-top:20px;height: 30px;box-shadow: 5px 5px 3px #888888;">
             <span>
             <i class="icon icon-lg">receipt</i><%out.print(p.getPosttitle());%>
@@ -448,7 +448,7 @@
                 for (Post p:(ArrayList<Post>)request.getAttribute("SubjectPost")
                 ) {
         %>
-        <a href="${pageContext.request.contextPath}/ShowPostContext?pid=<%out.print(p.getPostid());%>">
+        <a href="${pageContext.request.contextPath}/ShowPostContent?pid=<%out.print(p.getPostid());%>">
             <div style="margin-left: 250px;margin-top:20px;height: 30px;box-shadow: 5px 5px 3px #888888;">
             <span>
             <i class="icon icon-lg">receipt</i><%out.print(p.getPosttitle());%>

@@ -15,7 +15,7 @@ import org.json.simple.*;
 
 
 /**
- * ShowPostContext implementation class Upload_json
+ * ShowPostContent implementation class Upload_json
  */
 @WebServlet("/Upload_json")
 public class Upload_json extends HttpServlet {

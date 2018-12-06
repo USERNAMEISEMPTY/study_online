@@ -13,6 +13,8 @@
 	<script charset="utf-8" src="${pageContext.request.contextPath }/kindeditor/kindeditor-simple.js"></script>
 	<script charset="utf-8" src="${pageContext.request.contextPath }/kindeditor/lang/zh-CN.js"></script>
 	<script charset="utf-8" src="${pageContext.request.contextPath }/kindeditor/plugins/code/prettify.js"></script>
+	<script src="${pageContext.request.contextPath }/js/jquery.min.js" ></script>
+	<script src="${pageContext.request.contextPath }/js/bootstrap.min.js" ></script>
 	<script>
 		KindEditor.ready(function(K) {
 			var editor1 = K.create('textarea[name="content1"]', {

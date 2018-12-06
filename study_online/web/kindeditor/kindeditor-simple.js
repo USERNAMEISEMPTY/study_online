@@ -261,8 +261,7 @@
         minChangeSize : 50,
         zIndex : 811213,
         items :[
-             'preview','code', '|', 'justifyleft', 'justifycenter', 'justifyright',
-            'justifyfull',   '|',  'bold', 'image', 'emoticons'
+             'code','bold', 'image', 'emoticons'
         ], items1 :[
             'source', '|', 'undo', 'redo', '|', 'preview', 'print', 'template', 'code', 'cut', 'copy', 'paste',
             'plainpaste', 'wordpaste', '|', 'justifyleft', 'justifycenter', 'justifyright',

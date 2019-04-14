@@ -18,9 +18,11 @@ public class PostDao {
         }
     }
     public Post getPostByPID(String pid)throws SQLException{
-        String sql="select * from posts where postid=?";
+        String sql="update posts set look_num = look_num + 1 where postid =?;";
         QueryRunner runner =new QueryRunner(DataSourceUtils.getDataSource());
-        Post ps= (Post) runner.query(sql, new BeanHandler<Post>(Post.class),pid);
+        runner.update(sql,pid);
+        sql="select * from posts where postid=?";
+        Post ps= runner.query(sql, new BeanHandler<Post>(Post.class),pid);
         return ps;
     }
     public ArrayList<Post> getPostByUserID(String uid)throws SQLException{

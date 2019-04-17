@@ -5,7 +5,6 @@
     request.setCharacterEncoding("UTF-8");
     String htmlData = request.getParameter("content1") != null ? request.getParameter("content1") : "";
 %>
-<!doctype html>
 <html>
 <head>
     <meta charset="utf-8" />
